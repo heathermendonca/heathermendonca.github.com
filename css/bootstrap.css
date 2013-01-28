@@ -69,7 +69,7 @@ sub {
 img {
   width: auto\9;
   height: auto;
-  max-width: 100%;
+  max-width: 90%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -675,7 +675,7 @@ cite {
 }
 
 .muted {
-  color: #999999;
+  color: #B2CCCC;
 }
 
 a.muted:hover {
