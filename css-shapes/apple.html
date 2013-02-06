@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class=''></div>
+
+<div class='apple'>
+	<div class='base'></div>
+	<div class='eyes'></div>
+	<div class="smile"></div>
+	<div class='cheeks'></div>
+	<div class='stem'></div>
+	<div class='stem-shadow'></div>
+	<div class='leaf'></div>
+	<div class='shine'></div>
+
+</div>
+
+
+
+<style>
+.apple {
+	position:relative;
+	margin:200px 200px;}
+
+.base {
+	background-color:#F23939;
+	position:absolute;
+	border-radius:250px 250px 300px 300px;
+	width:400px; height:400px;
+	top:0px; left:0px;}
+	
+.smile {
+  position:absolute;
+  top: 255px;
+  left: 160px;
+  width: 50px;
+  height: 25px;
+  border-radius:0 0 100px 100px;
+  border:15px solid #3C2415;
+  border-top:none;
+}
+
+.eyes {
+	background-color:#3C2415;
+	position:absolute;
+	border-radius:75px / 100px;
+	width:50px; height:65px;
+	top:200px; left:90px;
+	z-index:2;}
+	
+.eyes:after {
+	content:"";
+	background-color:#3C2415;
+	position:absolute;
+	border-radius:75px / 100px;
+	width:50px; height:65px;
+	top:0px; left:170px;}
+	
+.cheeks {
+	background-color:#C42E2E;
+	position:absolute;
+	border-radius:100px;
+	width:75px; height:75px;
+	top:235px; left:50px;
+	z-index:1;}
+	
+.cheeks:after {
+	content:"";
+	background-color:#C42E2E;
+	position:absolute;
+	border-radius:100px;
+	width:75px; height:75px;
+	top:0px; left:225px;
+	z-index:1;}
+	
+.shine {
+	background-color:white;
+	position:absolute;
+	-webkit-transform:rotate(-25deg);
+	border-radius:75px / 100px;
+	width:50px; height:65px;
+	top:60px; left:300px;
+	z-index:10;}
+	
+.shine:after {
+	content:"";
+	background-color:white;
+	position:absolute;
+	-webkit-transform:rotate(10deg);
+	border-radius:75px / 100px;
+	width:20px; height:30px;
+	top:55px; left:25px;
+	z-index:10;}
+
+.leaf {
+	background-color:#B1E122;
+	position:absolute;
+	-webkit-transform:rotate(-15deg);
+	border-radius:0px 60px 40px 60px;
+	width:100px; height:150px;
+	top:-100px; left:100px;
+	z-index:3;}
+
+.stem {
+  position:absolute;
+  top: -50px;
+  left: 190px;
+  width: 75px;
+  height:75px;
+  border-radius: 50% 0% 0% 0%/50% 50% 50% 50%;
+  border:25px solid #3C2415;
+  border-right:none;
+  z-index:4;}
+  
+.stem:after {
+	content:"";
+	background-color:#F23939;
+	position:absolute;
+	width:125px; height:75px;
+	top:70px; left:0px;
+	z-index:5;}
+
+.stem-shadow {
+  position:absolute;
+  top: 55px;
+  left: 140px;
+  width: 100px;
+  height: 20px;
+  border-radius:0 0 150px 150px;
+  border:12px solid #850808;
+  border-top:none;
+  z-index:9;}
+	
+</style>
+
+</body>
+</html>

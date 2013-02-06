@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class='camera'>
+	<div class='body'></div>
+	<div class='lens1'></div>
+	<div class='top'></div>
+	<div class='lens1-stroke'></div>
+	<div class='lens2'></div>
+	<div class='shine'></div>
+	<div class='line1'></div>
+	<div class='line2'></div>
+	<div class='innerlens'></div>
+	<div class="topcic"></div>
+	<div class="button1"></div>
+	<div class="button2"></div>
+</div>
+
+
+<style>
+
+body {background-color:orange;}
+
+.camera {
+	position:relative;
+	margin:200px 200px;}
+
+.body {
+	background-color:#E6E7E8;
+	position:absolute;
+	border-radius:20px;
+	width:575px; height:350px;
+	top:0px; left:0px;
+	z-index:-1;}
+	
+.body:after {
+	content:"";
+	background-color:#2B2A2B;
+	position:absolute;
+	width:585px; height:275px;
+	top:50px; left:-5px;}
+	
+.topcic {
+  position:absolute;
+  top: 10px;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius:200px;
+  border:5px solid orange;
+  z-index:4;}
+  
+.topcic:after {
+  content:"";
+  position:absolute;
+  top: -5px;
+  left: 515px;
+  width: 15px;
+  height: 15px;
+  border-radius:200px;
+  border:5px solid orange;
+  z-index:4;}
+	
+.lens1 {
+  position:absolute;
+  background-color:orange;
+  top: 30px;
+  left: 120px;
+  width: 250px;
+  height: 250px;
+  border-radius:300px;
+  border:50px solid #2B2A2B;
+  z-index:2;}
+  
+.top {
+	border-bottom: 70px solid #E6E7E8;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	height: 0;
+	width: 160px;
+	position:absolute;
+	top:-70px; left:165px;}
+	
+.lens1-stroke {
+  position:absolute;
+  background-color:orange;
+  top: 25px;
+  left: 115px;
+  width: 260px;
+  height: 260px;
+  border-radius:300px;
+  border:50px solid orange;
+  z-index:1;}
+  
+.lens2 {
+  position:absolute;
+  background-color:#2B2A2B;
+  top: 85px;
+  left: 175px;
+  width: 170px;
+  height: 170px;
+  border-radius:300px;
+  border:35px solid #2B2A2B;
+  z-index:2;}
+  
+.shine {
+  position:absolute;
+  background-color:white;
+  top: 143px;
+  left: 295px;
+  width: 60px;
+  height: 60px;
+  border-radius:300px;
+  z-index:3;}
+  
+.shine:after {
+  content:"";
+  position:absolute;
+  background-color:white;
+  top: 60px;
+  left: 50px;
+  width: 17px;
+  height: 17px;
+  border-radius:300px;
+  z-index:3;}
+  
+.line1 {
+  position:absolute;
+  background-color:orange;
+  top: -5px;
+  left: 0px;
+  width: 600px;
+  height: 5px;}
+  
+.line1:after {
+	content:"";
+  position:absolute;
+  background-color:orange;
+  top: 50px;
+  left: 0px;
+  width: 600px;
+  height: 5px;}
+  
+.line2 {
+  position:absolute;
+  background-color:orange;
+  top: 325px;
+  left: -20px;
+  width: 600px;
+  height: 5px;}
+  
+.innerlens {
+  position:absolute;
+  top: 110px;
+  left: 200px;
+  width: 180px;
+  height: 180px;
+  border-radius:100px;
+  border:5px solid orange;
+  z-index:5;}
+  
+.innerlens:after {
+  content:"";
+  position:absolute;
+  top: -15px;
+  left: -15px;
+  width: 200px;
+  height: 200px;
+  border-radius:200px;
+  border:5px solid orange;
+  z-index:4;}
+  
+.button1 {
+	background-color:#2B2A2B;
+	position:absolute;
+	border-radius:10px 10px 0 0;
+	width:100px; height:20px;
+	top:-25px; left:35px;}
+	
+.button2 {
+	background-color:#2B2A2B;
+	position:absolute;
+	border-radius:10px 10px 0 0;
+	width:100px; height:15px;
+	top:-20px; left:450px;}
+	
+.button2:after {
+	content:"";
+	background-color:#2B2A2B;
+	position:absolute;
+	border-radius:10px 10px 0 0;
+	width:75px; height:15px;
+	top:-18px; left:12px;}
+
+	
+</style>
+
+</body>
+</html>

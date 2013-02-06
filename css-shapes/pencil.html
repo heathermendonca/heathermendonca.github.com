@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class=''></div>
+
+<div class='pencil'>
+	<div class='base'></div>
+	<div class='grip'></div>
+	<div class='lead'></div>
+	<div class='oval-end'></div>
+	<div class='clip'></div>
+	<div class='clip-con'></div>
+	<div class='eraser'></div>
+	<div class='con-piece'></div>
+	<div class='clip-piece'></div>
+</div>
+
+
+<style>
+
+.pencil {
+	position:relative;
+	margin:100px 150px;
+	-webkit-transform:rotate(-10deg);}
+
+.base {
+	background-color:orange;
+	position:absolute;
+	width:700px; height:40px;
+	top:0px; left:0px;
+	z-index:1;}
+
+.base:after {
+	content:"";
+	background-color:orange;
+	position:absolute;
+	border-radius:50px / 100px;
+	width:12px; height:40px;
+	top:0px; left:695px;}
+	
+.grip {
+	background-color:tomato;
+	position:absolute;
+	border-radius:10px;
+	width:235px; height:50px;
+	top:-5px; left:20px;
+	z-index:2;}
+	
+.oval-end {
+	background-color:gainsboro;
+	position:absolute;
+	border-radius:200px / 50px;
+	width:173px; height:40px;
+	top:0px; left:-90px;
+	z-index:-1;}
+
+.oval-end:before {
+	content:"";
+	background-color:gainsboro;
+	position:absolute;
+	width:16px; height:10px;
+	top:15px; left:-10px;}	
+	
+.lead {
+	background-color:gray;
+	position:absolute;
+	width:235px; height:3px;
+	top:18px; left:-120px;
+	z-index:-2;}
+	
+.clip {
+	background-color:tomato;
+	position:absolute;
+	border-radius:10px;
+	width:236px; height:12px;
+	top:-20px; left:520px;
+	z-index:2;}
+
+.clip-con {
+	background-color:tomato;
+	position:absolute;
+	width: 18px; height: 20px;
+	-webkit-transform: skew(20deg);
+	top:-20px; left:740px;}
+
+.eraser {
+	background-color:whitesmoke;
+	position:absolute;
+	width:25px; height:32px;
+	top:4px; left:766px;}
+
+.eraser:after {
+	content:"";
+	background-color:whitesmoke;
+	position:absolute;
+	border-radius:50px / 100px;
+	width:12px; height:32px;
+	top:0px; left:20px;}
+	
+.con-piece {
+	background-color:#E65940;
+	position:absolute;
+	width:26px; height:32px;
+	top:4px; left:700px;}
+	
+.clip-piece {
+	background-color:tomato;
+	position:absolute;
+	width:40px; height:40px;
+	top:0px; left:726px;}
+	
+.clip-piece:after {
+	content:"";
+	background-color:tomato;
+	position:absolute;
+	border-radius:50px / 100px;
+	width:12px; height:40px;
+	top:0px; left:35px;}
+	
+.clip-piece:before {
+	content:"";
+	background-color:tomato;
+	position:absolute;
+	border-radius:50px / 100px;
+	width:12px; height:40px;
+	top:0px; left:-5px;}
+
+</style>
+
+</body>
+</html>
