@@ -2,7 +2,6 @@
 <html>
 <body>
 
-<div class=''></div>
 
 <div class='pencil'>
 	<div class='base'></div>
@@ -19,10 +18,52 @@
 
 <style>
 
+
+@-webkit-keyframes er-push {
+   0% { -webkit-transform: translate(0,0); }
+   5%  { -webkit-transform: translate(-15px,0); }
+   10% {  -webkit-transform: translate(0,0);}
+   100% {  -webkit-transform: translate(0,0); }
+}
+
+@-webkit-keyframes lead-push {
+   0% { -webkit-transform: translate(0,0); }
+   10%  { -webkit-transform: translate(0,0); }
+   50% { -webkit-transform: translate(-200px,0); }
+   100% {  -webkit-transform: translate(0,0); }
+}
+
+
+
+
+
 .pencil {
 	position:relative;
-	margin:100px 150px;
-	-webkit-transform:rotate(-10deg);}
+	margin:100px 250px;
+	-webkit-transform:rotate(0deg);}
+	
+.lead {
+	background-color:gray;
+	position:absolute;
+	width:235px; height:3px;
+	top:18px; left:-120px;
+	z-index:-2;
+	-webkit-animation: lead-push 1s ease-out 0 infinite;}
+
+.eraser {
+	background-color:pink;
+	position:absolute;
+	width:25px; height:32px;
+	top:4px; left:766px;
+	-webkit-animation: er-push 1s ease-out 0 infinite;}
+
+.eraser:after {
+	content:"";
+	background-color:pink;
+	position:absolute;
+	border-radius:50px / 100px;
+	width:12px; height:32px;
+	top:0px; left:20px;}
 
 .base {
 	background-color:orange;
@@ -62,13 +103,6 @@
 	width:16px; height:10px;
 	top:15px; left:-10px;}	
 	
-.lead {
-	background-color:gray;
-	position:absolute;
-	width:235px; height:3px;
-	top:18px; left:-120px;
-	z-index:-2;}
-	
 .clip {
 	background-color:tomato;
 	position:absolute;
@@ -83,20 +117,6 @@
 	width: 18px; height: 20px;
 	-webkit-transform: skew(20deg);
 	top:-20px; left:740px;}
-
-.eraser {
-	background-color:whitesmoke;
-	position:absolute;
-	width:25px; height:32px;
-	top:4px; left:766px;}
-
-.eraser:after {
-	content:"";
-	background-color:whitesmoke;
-	position:absolute;
-	border-radius:50px / 100px;
-	width:12px; height:32px;
-	top:0px; left:20px;}
 	
 .con-piece {
 	background-color:#E65940;
