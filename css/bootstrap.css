@@ -656,6 +656,16 @@ p {
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
+  text-align:center;
+}
+
+.lead2 {
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 30px;
+  text-align:center;
+  color:gray;
 }
 
 small {
