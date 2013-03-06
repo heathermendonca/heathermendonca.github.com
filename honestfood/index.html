@@ -59,6 +59,10 @@
 			<img src='img/honest-foods.png' id=honest-foods alt="orange"/>
 		</div>
 		
+		<div id=big-circle>
+			<img src='img/full-chart.png' id=honest-foods alt="orange"/>
+		</div>
+		
 		<p>These catagories are then put into a visual chart that can <br> be used to see what we are really getting out of that food!</p>
 	
 	</section>
@@ -80,15 +84,35 @@
 			</div>
 		</div>
 		<div id=n-case>
+			<div id=chart-box>
 			<p>Hover over the Honest Foods Label</p>
-			<img src='img/empty-chart.png' alt="chart"/>
-			<div id=hover-information-box></div>
+			<img src='img/empty-chart.png' class=empty-chart alt="chart"/>
+			<div id=hover-information-box>
+				<div id=n-information>
+					<img src='img/cata-yellow.png' alt="fruit"/>
+				<div id=n-info-text>	
+					<h3>BODY ENGERY</h3>
+					<p>Super great for things regarding energy & other stuff thats important!</p>
+				</div>
+				</div>
+			</div>
+			
 			<p>Select type of foods wanted</p>
+			</div>
 			<div id=food-box>
 				<div id=food-sort>
-					<li>Fruit</li>
-					<li>Vegetables</li>
-					<li>Legumes/Nuts</li>
+					<div class=sort-item id=fruit> 
+						<img src='img/fruit-sort.png' alt="fruit"/>
+						<p>Fruit</p> 
+					</div>
+					<div class=sort-item id=vege> 
+						<img src='img/vege-sort.png' alt="vege"/>
+						<p>Vegetables</p>
+					</div>
+					<div class=sort-item id=nuts>
+					<img src='img/nuts-sort.png' alt="nuts"/>
+						<p>Legumes/Nuts</p> 
+					</div>
 				</div>
 			</div>
 		</div>
@@ -100,12 +124,16 @@
 			<p>BEST RESULTS FOR YOUR LABEL...</p>
 		</div>
 		
-		<div id=results-section></div>
+		<div id=results-section>
+			<div id=food-result></div>
+		</div>
 	</section>
 </div>
 
 
-<div id=footer-wrapper></div>
+<div id=footer-wrapper>
+	<div id=bottom></div>
+</div>
 
 
 </body>
