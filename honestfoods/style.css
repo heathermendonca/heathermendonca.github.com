@@ -136,10 +136,30 @@ p {
 	background-color: white;
 	}
 	
-#big-cicle #map {
+#big-circle #map {
 	position:absolute;
-	top:20px;
-	left:-200px;}
+	top:28px;
+	left:-30px;}
+	
+#big-circle #apple-q {
+	position:absolute;
+	top:-25px;
+	left:37px;}
+	
+#big-circle #orange-label {
+	position:absolute;
+	top:-10px;
+	left:38px;}
+	
+#big-circle #honest-foods {
+	position:absolute;
+	top:-135px;
+	left:-210px;}
+	
+#big-circle #full-chart {
+	position:absolute;
+	top:0px;
+	left:-20px;}
 
 
 /* -----------------END PARALAX---- */
