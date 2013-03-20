@@ -124,13 +124,17 @@ p {
 	text-align:center;
 	}
 	
+#circle-holder {
+	position:relative;
+	margin:0 auto;
+	width:300px; height:300px;}	
+
 #paralax p {
 	padding-bottom:45px;}
 	
 #big-circle {
-	position:relative;
+	position:absolute;
 	display:block;
-	margin:0 auto;
 	width:290px; height:290px;
 	-webkit-border-radius: 290px;
 	background-color: white;
@@ -163,6 +167,51 @@ p {
 
 
 /* -----------------END PARALAX---- */
+
+/* -----------------HOLY SHIT WHAT AM I DOING?--- */
+
+
+
+
+  #big-circle > div {
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+  }
+
+  .card .front {
+    position:relative;
+    z-index:2;
+    -webkit-transform: rotate(0deg) rotateY(0deg);
+    background:url(images/card-back.png) no-repeat left top;
+  }
+
+  .card .back {
+    z-index:1;
+    -webkit-transform: rotateX(0deg) rotateY(-180deg);
+    background:url(images/card-front.png) no-repeat left top;
+  }
+
+  .card.flip .front {
+     z-index: 1;
+     -webkit-transform: rotateY(180deg);
+  }
+
+  .card.flip .back {
+    z-index:2;
+    -webkit-transform: rotateY(0deg);
+  }
+
+
+
+
+
+
+
+
+
+/* -----------------FUCCCCCK--------------------- */
+
 
 /* -----------------START INTERACTIVE CHART---- */
 
