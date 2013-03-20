@@ -1,4 +1,4 @@
-alert('HEY GUUUURL ITS LOADING');
+//alert('HEY GUUUURL ITS LOADING');
 //test test test guuurl
 
 
@@ -29,6 +29,7 @@ $(document).ready(function() {
 	scrollorama
 		//.animate('#example1',{duration:400, property:'opacity'})
 		.animate('#circle-holder',{ delay: 0, duration: 50, property: 'rotate-y', start:-1400, end:0 })
+		
 		.animate('#textone',{ delay: 100, duration: 300, property: 'left', start:-1400, end:0 })
 		.animate('#texttwo',{ delay: 150, duration: 300, property: 'left', start:-1400, end:0 })
 		.animate('#textthree',{ delay: 200, duration: 300, property: 'left', start:-1400, end:0 })
@@ -39,5 +40,5 @@ $(document).ready(function() {
 
 
 //
-alert('D:<');
+//alert('D:<');
 //test test test guuurl
