@@ -173,42 +173,42 @@ p {
 
 
 
-  #big-circle > div {
+#circle-holder > div {
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     -webkit-transition: -webkit-transform .4s ease-in-out;
   }
 
-  .card .front {
-    position:relative;
+#circle-holder .circle-one {
     z-index:2;
     -webkit-transform: rotate(0deg) rotateY(0deg);
-    background:url(images/card-back.png) no-repeat left top;
   }
 
-  .card .back {
+#circle-holder .circle-two {
     z-index:1;
     -webkit-transform: rotateX(0deg) rotateY(-180deg);
-    background:url(images/card-front.png) no-repeat left top;
   }
 
-  .card.flip .front {
+#circle-holder:hover .circle-one {
      z-index: 1;
      -webkit-transform: rotateY(180deg);
   }
 
-  .card.flip .back {
+#circle-holder:hover .circle-two {
     z-index:2;
     -webkit-transform: rotateY(0deg);
   }
 
 
 
+.circle-three {
+	visibility:hidden;}
 
+.circle-four {
+	visibility:hidden;}
 
-
-
-
+.circle-five {
+	visibility:hidden;}
 
 /* -----------------FUCCCCCK--------------------- */
 
