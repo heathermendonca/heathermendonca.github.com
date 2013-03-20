@@ -21,22 +21,16 @@ $(document).ready(function() {
     var scrollorama = $.scrollorama({
         blocks:'.scrollblock'
     });
-});
-
-scrollorama.onBlockChange(function() {
+    
+    scrollorama.onBlockChange(function() {
 		var i = scrollorama.blockIndex;
-		$('#console')
-		.css('display','block')
-		.text('onBlockChange | blockIndex:'+i+' | current block: '+scrollorama.settings.blocks.eq(i).attr('id'));
+	});
+	
+	scrollorama
+		//.animate('#example1',{duration:400, property:'opacity'})
+		.animate('#circle-holder',{ delay: 0, duration: 50, property: 'left', start:-1400, end:0 })
+		.animate('#textone',{ delay: 100, duration: 300, property: 'left', start:-1400, end:0 });
 });
-
-
-//scrollorama target --- my stuff
-
-scrollorama
-	//.animate('#example1',{duration:400, property:'opacity'})
-	.animate('#textone',{ delay: 100, duration: 100, start:-1400, end:0 })
-
 
 
 //
