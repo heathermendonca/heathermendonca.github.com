@@ -1,0 +1,22 @@
+myFoods = {
+
+		fruit: [ {name: 'Apple',  size:'1 Medium Apple', colors: [ 0, 0, 0, 0, 0, 0, 0]},
+				 {name: 'Orange', size:'1 Medium Orange', colors: [ 0, 0, 0, 0, 0, 0, 0]},
+				 {name: '', size:'', colors:[]}
+		], 
+		
+		vegetables: [ {},
+					  {}
+		], 
+		
+		beans: [ {}, 
+		         {}
+		
+		]
+
+		
+};
+
+
+
+
