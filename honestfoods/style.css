@@ -62,7 +62,7 @@ body {
 	}
 
 #landing-wrapper {
-	width:100%; height:690px;
+	width:100%; height:800px;
 	position:relative;
 	}
 
@@ -119,20 +119,26 @@ p {
 
 
 #paralax-wrapper {
-	width:100%; height:1200px;
-	text-align:center;}
-	
-#circle-holder {
+	width:100%; height:3200px;
 	position:relative;
-	margin:0 auto;
-	width:300px; height:300px;}	
-
-#paralax p {
-	padding-bottom:45px;}
+	text-align:center;
+	}
 	
+#paralax p {
+	padding-bottom:250px;
+	padding-top:20px;}
+	
+#p-underhf {
+	margin-top:30px;}
+	
+#p-under {
+	margin-top:180px;}
+
+
 #big-circle {
-	position:absolute;
+	position:relative;
 	display:block;
+	margin:0 auto;
 	width:290px; height:290px;
 	-webkit-border-radius: 290px;
 	background-color: white;
@@ -165,67 +171,6 @@ p {
 
 
 /* -----------------END PARALAX---- */
-
-/* -----------------HOLY SHIT WHAT AM I DOING?--- */
-
-
-
-
-#circle-holder > div {
-    -webkit-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    -webkit-transition: -webkit-transform .4s ease-in-out;
-  }
-
-#circle-holder .circle-one {
-    z-index:2;
-    -webkit-transform: rotate(0deg) rotateY(0deg);
-  }
-
-#circle-holder .circle-two {
-    z-index:1;
-    -webkit-transform: rotateX(0deg) rotateY(-180deg);
-  }
-
-#circle-holder:hover .circle-one {
-     z-index: 1;
-     -webkit-transform: rotateY(180deg);
-  }
-
-#circle-holder:hover .circle-two {
-    z-index:2;
-    -webkit-transform: rotateY(0deg);
-  }
-
-
-.circle-three {
-	visibility:hidden;}
-
-.circle-four {
-	visibility:hidden;}
-
-.circle-five {
-	visibility:hidden;}
-
-
-
-
-/*  from scrollorama */
-
-.scrollblock {
-	position: relative;
-	margin: 0;
-	width: 100%;
-	height: 400px;
-	background-color:green;
-}
-
-
-
-
-
-/* -----------------FUCCCCCK--------------------- */
-
 
 /* -----------------START INTERACTIVE CHART---- */
 
@@ -298,12 +243,7 @@ div h4 {
 	color:white;
 	margin-top:10px;
 	margin-bottom:418px;}
-	
-#n-case .empty-chart {
-	position:absolute;
-	z-index:3;
-	top:40px; left:15px;
-	}
+
 	
 #hover-information-box {
 	width:300px; height:382px;
@@ -318,32 +258,18 @@ div h4 {
 	
 	margin: 0 auto;
 	position:absolute;
-	top:60px; left:20px;}
+	top:50px; left:20px;}
 	
-#n-information {
-	width:300px; height:90px;
-	position:relative;
-	top:295px;
-	text-align:left;}
+#letters {padding-top:15px;}
+
+h5 {padding-top:15px;
+	padding-bottom:30px;
+	font-family:convergence;
+	font-size:60px;}
 	
-#n-information img {
-	padding-left:10px;}
-	
-#n-info-text {
-	position:absolute;
-	width:220px; height:90px;
-	top:0px;
-	left:80px;}
-	
-#n-info-text h3 {
-	color:#FFD040;
-	font-size:19px;
-	margin-top:0px;}
-	
-#n-info-text p {
-	color:#4A4944;
-	font-size:13px;
-	margin-top:5px;}
+#letter-button:hover {
+	color:lime;}	
+
 	
 #food-box {
 	width:300px; height:90px;
@@ -361,12 +287,11 @@ div h4 {
 	text-align:center;
 	margin-top:-5px;}
 	
-#food-sort {}
 	
 .sort-item {
 	width:75px; height:80px;
 	float:left;
-	margin-left:18px;}
+	margin-left:48px;}
 
 #fruit img{
 	position:relative;
@@ -375,10 +300,7 @@ div h4 {
 #vege img{
 	position:relative;
 	top:-5px;}
-	
-#nuts img{
-	position:relative;
-	top:-5px;}
+
 	
 #f-case {display:none;
 	margin-top:50px;
@@ -411,9 +333,40 @@ div h4 {
 	
 #food-result {
 	width:125px; height:125px;
-	-webkit-border-radius: 125px;
 	position:relative;
-	background-color:red;}
+	background-color:red;
+	margin:10px;}
+
+li {
+	float:left;
+	width:125px;
+	display:block;
+	list-style:none;
+	height:125px;
+	overflow:hidden;
+	position:relative;
+  }	
+	
+li .name-p {
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	padding:5px;
+	color:black;
+	font-size:13px;}
+
+li .size-p {	
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	padding:5px;
+	color:black;
+	font-size:13px;}
+
+
+	
+	
+
 	
 
 /* -----------------END INTERACTIVE CHART---- */

@@ -1,19 +1,15 @@
 myFoods = {
 
-		fruit: [ {name: 'Apple',  size:'1 Medium Apple', colors: [ 0, 0, 0, 0, 0, 0, 0]},
-				 {name: 'Orange', size:'1 Medium Orange', colors: [ 0, 0, 0, 0, 0, 0, 0]},
-				 {name: '', size:'', colors:[]}
+		fruit: [ {name: 'Apple',  size:'1 Medium Apple', colors: [ 1, 1, 1, 2, 1, 1, 1], picture: "images/apple-front.png"},
+				 {name: 'Orange', size:'1 Medium Orange', colors: [ 4, 1, 1, 1, 1, 0, 3]},
+				 {name: 'Banana', size:'1 Medium Banana', colors: [ 1, 1, 2, 1, 1, 0, 1]},
+				 {name: 'Kiwi', size:'1 Medium Kiwi', colors: [ 5, 1, 1, 1, 1, 2, 4]}
 		], 
 		
-		vegetables: [ {},
-					  {}
-		], 
-		
-		beans: [ {}, 
-		         {}
-		
+		vegetables: [ {name: 'Broccoli',  size:'1 Cup of Broccoli', colors: [ 5, 1, 1, 1, 1, 4, 3]},
+					  {name: 'Potato',  size:'1 Medium Plain Baked', colors: [ 1, 0, 1, 1, 0, 1, 1]},
+					  {name: 'Kale',  size:'1 Cup of Kale', colors: [ 4, 5, 1, 1, 5, 2, 3]}
 		]
-
 		
 };
 

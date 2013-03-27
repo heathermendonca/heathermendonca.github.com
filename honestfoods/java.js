@@ -1,44 +1,41 @@
-//alert('HEY GUUUURL ITS LOADING');
-//test test test guuurl
+
+//For letter sorting
+
+$(function() {
+
+  var ajax = $.get("fooddata.json",function(data) {
+    console.log(data);
+  });
+
+});
 
 
-
-//circle flipping attempt
-
-/* $(function() {
-  function flipCard() {
-  	$(this).toggleClass("flip");
-}
+$(function() {
   
-  $("#circle-holder").on("click", flipCard);
-});
+  var ajax = $.get("fooddata.json",function(response) { 
+  
+  	var i = 0;
+  	while(i < response.data.length) {
+  	var photo = response.data[i];
+//what is photo?  
 
-*/
+  	var li = $("<li>");
+  	var name = $("<div class=name-p>");
+  	var size = $("<div class=size-p''>");
+  	var img = $("<img>").attr('src',picture); 
 
-//scrollorama
-//v is that just for html?
-$(document).ready(function() {
-    var scrollorama = $.scrollorama({
-        blocks:'.scrollblock'
-    });
+  
+	li.append(img).append(name).append(size);
+	$("#food-result").append(li);
+	i++;
     
-    scrollorama.onBlockChange(function() {
-		var i = scrollorama.blockIndex;
-	});
-	
-	scrollorama
-		//.animate('#example1',{duration:400, property:'opacity'})
-		.animate('#circle-holder',{ duration: 500, property: 'padding-top', start:700, end:0 })
-		
-		.animate('#textone',{ delay: 100, duration: 300, property: 'left', start:-1400, end:0 })
-		.animate('#texttwo',{ delay: 150, duration: 300, property: 'left', start:-1400, end:0 })
-		.animate('#textthree',{ delay: 200, duration: 300, property: 'left', start:-1400, end:0 })
-		.animate('#textfour',{ delay: 250, duration: 300, property: 'left', start:-1400, end:0 })
-		.animate('#textfive',{ delay: 300, duration: 300, property: 'left', start:-1400, end:0 });
+    
+    }
+  });
 
-});
+});;
 
 
-//
-//alert('D:<');
-//test test test guuurl
+//how to sort?
+
+alert('POOP!');

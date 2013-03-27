@@ -3,24 +3,12 @@
 <head>
 	<title>Honest Foods</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
-
+	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Convergence' rel='stylesheet' type='text/css'>
 	
-	
-	
-	<!-- SCROLLORAMA POOP --!>
-	
-	<link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="scrollorama/css/normalize.css" type="text/css">
-	<link rel="author" href="https://plus.google.com/107766061849006545830"/>
-	
-	<script src="scrollorama/js/jquery-1.9.1.min.js"></script>
-	<script src="scrollorama/js/jquery.lettering-0.6.1.min.js"></script>
-	<script src="scrollorama/js/jquery.scrollorama.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="java.js" type="text/javascript"></script>
-	
-	<!-- END SCROLLORAMA POOP --!>
 
 </head>
 
@@ -45,48 +33,42 @@
 </div>
 
 
+
 <div id=paralax-wrapper>
 	<section id=paralax>
 	
-	<div class=scrollblock>
-	<div id=circle-holder>
-	
-		<div id=big-circle class=circle-one>
+		<div id=big-circle>
 			<img src='img/map.png' id=map alt="map"/>
 		</div>
-				
-		<div id=big-circle class=circle-two>
+		
+		<p>and poor eating habits are the cause.</p>
+		
+		<div id=big-circle>
 			<img src='img/apple-q.png' id=apple-q alt="apple"/>
 		</div>
 		
+		<p>But it isn&rsquo;t all our fault, because most people don&rsquo;t realize <br> how healthy fruits, vegetables, nuts, and legumes are</p>
 		
-		<div id=big-circle class=circle-three>
+		<div id=big-circle>
 			<img src='img/orange-label.png' id=orange-label alt="orange"/>
 		</div>
 		
+		<p>A reason for this could be the lack of <br>labeling on plant-based foods.</p>
 		
-		<div id=big-circle class=circle-four>
+				
+		<div id=big-circle>
 			<img src='img/honest-foods.png' id=honest-foods alt="orange"/>
 		</div>
 		
-		<div id=big-circle class=circle-five>
+		<p id=p-under>The System breaks up confusing vitamins and minerals <br> into catagories that your body needs to be healthy.</p>
+
+			
+		<div id=big-circle>
 			<img src='img/full-chart.png' id=full-chart alt="orange"/>
 		</div>
 		
-	</div>
-	</div>		
-	
-	<div class=scrollblock>
-		<p id="textone">and poor eating habits are the cause.</p>
+		<p id=p-underhf>These catagories are then put into a visual chart that can <br> be used to see what we are really getting out of that food!</p>
 
-		<p id="texttwo">But it isn&rsquo;t all our fault, because most people don&rsquo;t realize <br> how healthy fruits, vegetables, nuts, and legumes are</p>
-
-		<p id="textthree">A reason for this could be the lack of <br>labeling on plant-based foods.</p>
-		
-		<p id="textfour">The System breaks up confusing vitamins and minerals <br> into catagories that your body needs to be healthy.</p>
-		
-		<p id="textfive">These catagories are then put into a visual chart that can <br> be used to see what we are really getting out of that food!</p>
-	</div>
 	
 	
 	</section>
@@ -97,30 +79,47 @@
 <div id=interactive-bar></div>
 	<section id=interactive>
 		<div>
-			<h4>Explore foods with the Honest Food Chart <br>or alphabetically look for a food</h4>
+			<h4>Alphabetically explore foods with<br>the Honest Food Chart</h4>
 		</div>
 		<div id=case-buttons>	
 			<div id=n-button>
-				<h3>NUTRIENTS</h3>
+				<h3>FOODS</h3>
 			</div>
 			<div id=f-button>
-				<h3>FOODS</h3>
+				<h3>NUTRIENTS</h3>
 			</div>
 		</div>
 		<div id=n-case>
+			
 			<div id=chart-box>
-			<p>Hover over the Honest Foods Label</p>
-			<img src='img/empty-chart.png' class=empty-chart alt="chart"/>
+
+			<p>Click a Letter to sort through foods!</p>
+<!--		<img src='img/empty-chart.png' class=empty-chart alt="chart"/>
+-->	
 			<div id=hover-information-box>
-				<div id=n-information>
+				
+				<div id=letters>
+				
+				<div class=a-h-button id=letter-button>
+					<h5>A-H</h5>
+				</div>
+				<div class=i-p-button id=letter-button>
+					<h5>I-P</h5>
+				</div>
+				<div class=q-z-button id=letter-button>
+					<h5>Q-Z</h5>
+				</div>
+				
+				</div>
+<!--			<div id=n-information>
 					<img src='img/cata-yellow.png' alt="fruit"/>
 				<div id=n-info-text>	
 					<h3>BODY ENGERY</h3>
 					<p>Super great for things regarding energy & other stuff thats important!</p>
 				</div>
 				</div>
-			</div>
-			
+-->			</div>
+		
 			<p>Select type of foods wanted</p>
 			</div>
 			<div id=food-box>
@@ -133,10 +132,6 @@
 						<img src='img/vege-sort.png' alt="vege"/>
 						<p>Vegetables</p>
 					</div>
-					<div class=sort-item id=nuts>
-					<img src='img/nuts-sort.png' alt="nuts"/>
-						<p>Legumes/Nuts</p> 
-					</div>
 				</div>
 			</div>
 		</div>
@@ -145,14 +140,24 @@
 			<p>Words</p>
 		</div>
 		<div id=results-bar>
-			<p>BEST RESULTS FOR YOUR LABEL...</p>
+			<p>BEST RESULTS FOR YOUR CHOICE...</p>
 		</div>
+		
+		
 		
 		<div id=results-section>
 			<div id=food-result></div>
 		</div>
+	
+	
+	
+	
+	
 	</section>
 </div>
+
+
+
 
 
 <div id=footer-wrapper>
