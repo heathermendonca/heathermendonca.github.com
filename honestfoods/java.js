@@ -1,6 +1,12 @@
 
 //For letter sorting
 
+//Am I missing something? 
+//Message in Console says: 
+//XMLHttpRequest cannot load file:///Users/heathermendonca/Desktop/heathermendonca.github.com/honestfoods/fooddata.json. Origin null is not allowed by Access-Control-Allow-Origin.
+
+//Also, how to connect this to a button?? -_-
+
 $(function() {
 
   var ajax = $.get("fooddata.json",function(data) {
@@ -36,6 +42,6 @@ $(function() {
 });;
 
 
-//how to sort?
+//how to sort? 
 
 alert('POOP!');
