@@ -22,7 +22,7 @@ $(function() {
       $(".a-h-button").click(function()
            {
            
-        alert('A-H Clicked!')  
+        //alert('A-H Clicked!')  
 		
 		function createFruits(group){
     	
@@ -72,7 +72,7 @@ $(function() {
       $(".i-p-button").click(function()
            {
            
-        alert('I-P Clicked!')   
+        //alert('I-P Clicked!')   
 		
 		function createFruits(group){
     	
@@ -109,7 +109,7 @@ $(function() {
       $(".q-z-button").click(function()
            {
            
-        alert('Q-Z Clicked!')   
+        //alert('Q-Z Clicked!')   
 		
 		function createFruits(group){
     	
@@ -144,4 +144,4 @@ $(function() {
 
 
 
-alert('POOP!');
+//alert('POOP!');
