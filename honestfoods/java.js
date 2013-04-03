@@ -33,34 +33,31 @@ $(function() {
 				
 				var theFruit = myFoods.fruit[i];
 
+
     			if(group == theFruit.group) {
+
+					
 
 	  				var li = $("<li>");
   					var name = $("<div class=name-p>").text(theFruit.name);
   					var size = $("<div class=size-p>").text(theFruit.size);
   					var img = $("<img>").attr('src',theFruit.picture); 
 
+					
+					
 					li.append(img).append(name).append(size);
 					$("#food-result").append(li);
-				}
-				else{
-
-					var li = $("<li>");
-  					var name = $("<div class=name-p>").text(theFruit.name);
-  					var size = $("<div class=size-p>").text(theFruit.size);
-  					var img = $("<img>").attr('src',theFruit.picture); 				
 				
 				
-					li.remove(img).remove(name).remove(size);
-					$("#food-result").remove(li);	
 				}
-		
+			
 				
 		i++;
 		}
     
 		}
 
+		$("#food-result").empty();
    		createFruits(1);
    		
    		
@@ -93,15 +90,13 @@ $(function() {
 
 					li.append(img).append(name).append(size);
 					$("#food-result").append(li);
-				}else{
-					li.remove(img).remove(name).remove(size);
-					$("#food-result").remove(li);	
 				}
 		i++;
 		}
     
 		}
-
+		
+		$("#food-result").empty();
    		createFruits(2);
            		}
       		);
@@ -125,22 +120,22 @@ $(function() {
 
     			if(group == theFruit.group) {
 
+
+					
 	  				var li = $("<li>");
   					var name = $("<div class=name-p>").text(theFruit.name);
   					var size = $("<div class=size-p>").text(theFruit.size);
-  					var img = $("<img>").attr('src',theFruit.picture); 
+					var img = $("<img>").attr('src',theFruit.picture); 
 
 					li.append(img).append(name).append(size);
 					$("#food-result").append(li);
-				}else{
-					li.remove(img).remove(name).remove(size);
-					$("#food-result").remove(li);	
 				}
 		i++;
 		}
     
 		}
-
+		
+		$("#food-result").empty();
    		createFruits(3);
            		}
       		);

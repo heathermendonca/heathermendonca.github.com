@@ -107,13 +107,23 @@ p {
 	-webkit-border-radius: 50px;
 	position:relative;
 	display:block;
-	margin:0 auto;}
+	margin:0 auto;
+	}
 
 .circle img {
 	position:relative;
 	padding-top:14px;
 	}
-
+	
+.circle:hover{
+	-webkit-animation: smcircle-dance .5s ease-in-out infinite;}	
+	
+	
+@-webkit-keyframes smcircle-dance {
+	0% { -webkit-transform: translate(0,0);}
+	50% {  -webkit-transform: translate(0,15px);}
+	100% {  -webkit-transform: translate(0,0);}
+}
 
 /* -----------------END LANDING PAGE---- */
 
@@ -145,6 +155,17 @@ p {
 	-webkit-border-radius: 290px;
 	background-color: white;
 	}
+
+#big-circle:hover{
+	-webkit-animation: circle-dance .5s ease-in-out infinite;}	
+	
+@-webkit-keyframes circle-dance {
+	0% { -webkit-transform: translate(0,0);}
+	50% {  -webkit-transform: translate(10px,0);}
+	100% {  -webkit-transform: translate(0,0);}
+}
+
+
 	
 #big-circle #map {
 	position:absolute;
@@ -236,7 +257,7 @@ div h4 {
 #n-case {
 	margin-top:50px;
 	position:absolute;
-	width:340px; height:595px;
+	width:340px; height:455px;
 	-webkit-border-radius: 10px;
 	background-color:#4A4944;
 	}
@@ -339,14 +360,24 @@ h5 {padding-top:15px;
 
 li {
 	float:left;
-	width:120px;
+	width:126px;
 	display:block;
 	list-style:none;
 	height:155px;
 	position:relative;
-	padding-right: 25px;
-	padding-top:15px;
+	margin-right: 25px;
+	margin-top:15px;
+	overflow:hidden;
   }	
+   
+li img {
+	position:absolute;
+	top:0; left:0;
+	}
+
+li img:hover{
+	left:-126px;}  
+
 	
 li .name-p {
 	position:absolute;
