@@ -67,6 +67,7 @@ body {
 	}
 
 #landing-page {
+	position:relative;
 	max-width:500px;
 	height:auto;
 	margin:0 auto;
@@ -75,7 +76,8 @@ body {
 
 #landing-page .logo {
 	position:absolute;
-	padding-left:50px;}
+	padding-left:50px;
+	left:0;}
 
 h1 {
 	padding-top:138px;
@@ -296,11 +298,16 @@ h5 {padding-top:15px;
 #fruit img{
 	position:relative;
 	top:-5px;}
+	
+#fruit img:hover{
+	width:80%; height:80%;}
 
 #vege img{
 	position:relative;
 	top:-5px;}
 
+#vege img:hover{
+	width:80%; height:80%;}
 	
 #f-case {display:none;
 	margin-top:50px;
@@ -325,43 +332,42 @@ h5 {padding-top:15px;
 	font-size:13px;}
 	
 #results-section {
-	background-color:white;
 	width:580px; height:800px;
 	position:absolute;
 	top:124px; left:360px;
 	margin-bottom:50px;}
-	
-#food-result {
-	width:125px; height:125px;
-	position:relative;
-	background-color:red;
-	margin:10px;}
 
 li {
 	float:left;
-	width:125px;
+	width:120px;
 	display:block;
 	list-style:none;
-	height:125px;
-	overflow:hidden;
+	height:155px;
 	position:relative;
+	padding-right: 25px;
+	padding-top:15px;
   }	
 	
 li .name-p {
 	position:absolute;
 	bottom:0px;
 	width:100%;
-	padding:5px;
+	padding:5px 0;
 	color:black;
-	font-size:13px;}
+	font-size:18px;
+	font-family:convergence;
+	}
 
 li .size-p {	
 	position:absolute;
 	bottom:0px;
 	width:100%;
-	padding:5px;
+	padding:5px 0;
 	color:black;
-	font-size:13px;}
+	font-size:11px;
+	margin-top:20px;
+	font-family:convergence;
+	top:140px;}
 
 
 	

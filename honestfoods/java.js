@@ -6,42 +6,147 @@
 //XMLHttpRequest cannot load file:///Users/heathermendonca/Desktop/heathermendonca.github.com/honestfoods/fooddata.json. Origin null is not allowed by Access-Control-Allow-Origin.
 
 //Also, how to connect this to a button?? -_-
+//Another Problem, freaking logo! D:<
+
+//
+
+
+    console.log(myFoods);
+
+
+
+
+//A-H BUTTON (GROUP 1) VVVVV
 
 $(function() {
+      $(".a-h-button").click(function()
+           {
+           
+        alert('A-H Clicked!')  
+		
+		function createFruits(group){
+    	
+		var i = 0;
 
-  var ajax = $.get("fooddata.json",function(data) {
-    console.log(data);
-  });
+		while(i < myFoods.fruit.length) {
+		
+				
+				var theFruit = myFoods.fruit[i];
 
+    			if(group == theFruit.group) {
+
+	  				var li = $("<li>");
+  					var name = $("<div class=name-p>").text(theFruit.name);
+  					var size = $("<div class=size-p>").text(theFruit.size);
+  					var img = $("<img>").attr('src',theFruit.picture); 
+
+					li.append(img).append(name).append(size);
+					$("#food-result").append(li);
+				}
+				else{
+
+					var li = $("<li>");
+  					var name = $("<div class=name-p>").text(theFruit.name);
+  					var size = $("<div class=size-p>").text(theFruit.size);
+  					var img = $("<img>").attr('src',theFruit.picture); 				
+				
+				
+					li.remove(img).remove(name).remove(size);
+					$("#food-result").remove(li);	
+				}
+		
+				
+		i++;
+		}
+    
+		}
+
+   		createFruits(1);
+   		
+   		
+});
+      
 });
 
 
+//I-P BUTTON (GROUP 2) VVVVV
+
 $(function() {
-  
-  var ajax = $.get("fooddata.json",function(response) { 
-  
-  	var i = 0;
-  	while(i < response.data.length) {
-  	var photo = response.data[i];
-//what is photo?  
+      $(".i-p-button").click(function()
+           {
+           
+        alert('I-P Clicked!')   
+		
+		function createFruits(group){
+    	
+		var i = 0;
 
-  	var li = $("<li>");
-  	var name = $("<div class=name-p>");
-  	var size = $("<div class=size-p''>");
-  	var img = $("<img>").attr('src',picture); 
+		while(i < myFoods.fruit.length) {
+  				var theFruit = myFoods.fruit[i];
 
-  
-	li.append(img).append(name).append(size);
-	$("#food-result").append(li);
-	i++;
+    			if(group == theFruit.group) {
+
+	  				var li = $("<li>");
+  					var name = $("<div class=name-p>").text(theFruit.name);
+  					var size = $("<div class=size-p>").text(theFruit.size);
+  					var img = $("<img>").attr('src',theFruit.picture); 
+
+					li.append(img).append(name).append(size);
+					$("#food-result").append(li);
+				}else{
+					li.remove(img).remove(name).remove(size);
+					$("#food-result").remove(li);	
+				}
+		i++;
+		}
     
+		}
+
+   		createFruits(2);
+           		}
+      		);
+      
+});
+
+//Q-Z BUTTON (GROUP 3) VVVVV
+
+$(function() {
+      $(".q-z-button").click(function()
+           {
+           
+        alert('Q-Z Clicked!')   
+		
+		function createFruits(group){
+    	
+		var i = 0;
+
+		while(i < myFoods.fruit.length) {
+  				var theFruit = myFoods.fruit[i];
+
+    			if(group == theFruit.group) {
+
+	  				var li = $("<li>");
+  					var name = $("<div class=name-p>").text(theFruit.name);
+  					var size = $("<div class=size-p>").text(theFruit.size);
+  					var img = $("<img>").attr('src',theFruit.picture); 
+
+					li.append(img).append(name).append(size);
+					$("#food-result").append(li);
+				}else{
+					li.remove(img).remove(name).remove(size);
+					$("#food-result").remove(li);	
+				}
+		i++;
+		}
     
-    }
-  });
+		}
 
-});;
+   		createFruits(3);
+           		}
+      		);
+      
+});
 
 
-//how to sort? 
 
 alert('POOP!');
