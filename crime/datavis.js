@@ -8,7 +8,7 @@ $(function(){
 
 //Another Way...
 $("<p>").text("Crime Incidents per Neighborhood")
-	.appendTo("#main");
+	.appendTo("#container");
 
 });
  
@@ -57,7 +57,7 @@ $(function() {
     
     }
     
-    alert(crimes);
+    //alert(crimes);
     
 });
 
