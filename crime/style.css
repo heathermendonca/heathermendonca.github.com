@@ -1,0 +1,14 @@
+p {font-family:helvetica;
+	font-size:15pt;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-align:center;}
+	
+	
+.crimestyle {
+	background-color:blue;
+	height:10px;}
+	
+.domesticstyle {
+	background-color:pink;
+	height:10px;}
