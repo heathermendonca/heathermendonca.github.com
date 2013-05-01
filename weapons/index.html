@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	<title>Weapon Weather</title>
+	
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Satisfy|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="datavis.js"></script>
+	<script src="weapon.js"></script>
+	
+</head>
+
+<body>
+
+<div id=header>
+	<div id=wordbox>
+		<div id=boston> Boston's </div>
+		<h1>WEAPON WEATHER</h1>
+	
+		<div id=subtitle>
+			<h2>FORECAST: SUMMER 2012</h2>
+		</div>
+	</div>
+	
+</div>
+
+<div id=content>
+
+<div id=sidebar>
+	<div id=box>
+		<div id=boxtitle>SELECT A WEATHER TYPE</DIV>
+		
+		<div id=buttons>
+			<div class=clearbutton id=sort-button>
+					<img src="img/clear.png">
+					<h5>CLEAR</h5>
+			</div>
+			<div class=cloudybutton id=sort-button>
+					<img src="img/cloudy.png">
+					<h5>CLOUDY</h5>
+			</div>
+			<div class=rainbutton id=sort-button>
+					<img src="img/rain.png">
+					<h5>RAIN</h5>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+<div id=mapholder>
+	<div id=weaponlocation>
+		<div id=charlestown class=item></div>
+		<div id=eastboston class=item></div>
+		<div id=allston class=item></div>
+		<div id=combinedcentral class=item></div>
+		<div id=southboston class=item></div>
+		<div id=jamaica class=item></div>
+		<div id=roxbury class=item></div>
+		<div id=northdorchester class=item></div>			
+		<div id=westroxbury class=item></div>
+		<div id=roslindale class=item></div>
+		<div id=mattapan class=item></div>
+		<div id=southdorchester class=item></div>
+		<div id=hyde class=item></div>
+	</div>
+
+	<div id=map>
+		<img src="img/map.png">
+	</div>
+</div>
+	
+</div>	
+
+</body>
+
+</html>
