@@ -44,7 +44,7 @@ $(function() {
          }
       } 
 
-       $("#" + divName.replace(" ","-")).css("background-image","url(img/" + attack.replace(" ","-") + ".png)");
+       $("#" + divName.replace(" ","-")).css("background-image","url(img/" + attack.replace(" ","-").replace("/","-").replace("T/","T-") + ".png)");
        console.log(attack);    
       n++;
     }
@@ -54,17 +54,27 @@ $(function() {
 	
       $(".clearbutton").click(function(){
       	showWeapons("CLEAR" || "SUNNY");
-      	alert('Clear Weapon Forcast!')
+      	//alert('Clear Weapon Forcast!')
+      	 $(this).css("background-color","#782b1e");
+      	 $(".cloudybutton").css("background-color","white");
+      	 $(".rainbutton").css("background-color","white"); 
       });
            
       $(".cloudybutton").click(function(){
       	showWeapons("CLOUDY");
-        alert('Cloudy Weapon Forcast!')   
+        //alert('Cloudy Weapon Forcast!')
+        $(this).css("background-color","#782b1e");
+        $(".clearbutton").css("background-color","white");
+      	$(".rainbutton").css("background-color","white"); 
       });     
     
 	  $(".rainbutton").click(function(){
-	  	showWeapons("RAIN");
-        alert('Rain Weapon Forcast!') 
+	  	showWeapons("RAIN" || "RAINING");
+        //alert('Rain Weapon Forcast!')
+        $(this).css("background-color","#782b1e");
+        $(".clearbutton").css("background-color","white");
+      	$(".cloudybutton").css("background-color","white"); 
+         
       });
         
 });
